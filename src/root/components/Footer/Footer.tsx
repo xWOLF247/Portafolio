@@ -1,20 +1,20 @@
 import React from 'react';
-/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';*/
 import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="footer-container">
-      <p>Este es el pie de página</p>
-
-      <div className="social-icons">
-        <a href="https://www.linkedin.com/in/jarol-salazar-a92589276/" target="_blank" rel="noopener noreferrer">
-          {/*<FontAwesomeIcon icon={faLinkedin} />*/}
-        </a>
-      </div>
-    </footer>
-  );
+      <footer id='footbar'> 
+       <div className='Classfootbar' id='Classfotbar'>
+           <div className='logo'><img src='' alt="" id='Logo' /></div>
+           <ul className='links'>
+               <li><a href="#"></a>Linkedin</li>
+               <li><a href="#"></a>Instagram</li>
+               <li><a href="#"></a>Github</li>
+               <li><a href="#"></a>Gmail</li>
+           </ul>
+       </div>
+      </footer>
+     );
 };
 
 export default Footer;

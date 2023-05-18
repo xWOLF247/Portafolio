@@ -1,8 +1,53 @@
-.header-container {
-  background-color: #b53030;
-  padding: 20px;
-  width: 100%;
+
+#navbar {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+  height: 60px;
+  width: 100%vm;
+  color: rgb(245, 244, 244); /* letter color */
+  padding: 0.9rem 2rem;
+  opacity: 0.9;
+  background-color: #e71c11;
+  backdrop-filter: blur(10px);
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
 }
+ 
+
+li {
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.Classnavbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 875px;
+}
+
+.Classnavbar .links {
+  display: flex;
+  gap: 2rem;
+  padding-top: -30px;
+}
+
+#Classnavbar ul li:hover {
+  color: #a12424;
+  cursor: pointer;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
