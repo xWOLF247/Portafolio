@@ -5,17 +5,13 @@ import './App.css'
 import Header from '../src/root/components/Header/Header.tsx';
 import Footer from './root/components/Footer/Footer.tsx';
 
-function App() {
-  const [count, setCount] = useState(0)
+function App () {
 
   return (
     <>
       <div>
       <Header /> 
-      {
-         <img src={reactLogo} className="App-logo" alt="logo" />
-      }
-      <Footer/>
+      <Footer></Footer>
     </div>
 
     </>

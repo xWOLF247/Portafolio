@@ -1,12 +1,19 @@
 import Reacth from 'react';
 import './Header.css'; 
 
-const Header = () => {
+function Header() {
   return (
-    <header className="header-container">
-      <h1 className="header-title">Este es el encabezado</h1>
-    </header>
-  );
-};
+      <header id='navbar'> 
+       <div className='Classnavbar' id='Classnavbar'>
+           <div className='logo'><img src='' alt="" id='Logo' /></div>
+           <ul className='links'>
+               <li><a href="#"></a>Inicio</li>
+               <li><a href="#"></a>Información sobre mi</li>
+               <li><a href="#"></a>Contratame!!</li>
+           </ul>
+       </div>
+      </header>
+     );
+}
 
 export default Header;
