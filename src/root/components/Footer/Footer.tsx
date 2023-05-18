@@ -3,8 +3,8 @@ import './Footer.css';
 
 function Footer() {
   return (
-      <footer id='footbar'> 
-       <div className='Classfootbar' id='Classfotbar'>
+      <footer id='navfootbar'> 
+       <div className='Classfootbar' id='Classfootbar'>
            <div className='logo'><img src='' alt="" id='Logo' /></div>
            <ul className='links'>
                <li><a href="#"></a>Linkedin</li>

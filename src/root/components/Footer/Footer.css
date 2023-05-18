@@ -1,4 +1,4 @@
-#footbar {
+#navfootbar {
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -45,11 +45,3 @@ li {
   cursor: pointer;
 }
 
-@keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
