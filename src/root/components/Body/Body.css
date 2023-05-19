@@ -1,13 +1,20 @@
 .body-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #fafafa;
-    color: #ffffff;
-    padding: 20px;
-  }
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  height: 500px;
+  width: 100vw;
+  color: rgb(255, 8, 8);
+  padding: 0.9rem 2rem;
+  opacity: 0.9;
+  background-color: #ffffff;
+  backdrop-filter: blur(10px);
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
   
   .info-container, .contract-container {
     margin-bottom: 20px;

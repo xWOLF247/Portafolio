@@ -1,4 +1,5 @@
 #navbar {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -6,10 +7,13 @@
   z-index: 100;
   height: 60px;
   width: 100%;
-  color: rgb(1, 1, 1); /* letter color */
+  color: rgb(54, 180, 4); /* letter color */
   padding: 0.9rem 2rem;
-  background-color: #ffffffd1;
+  opacity: 0.9;
+  background-color: #070707;
   backdrop-filter: blur(10px);
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
 }
  
 
@@ -24,9 +28,9 @@ li {
 
 .Classnavbar {
   display: flex;
-  justify-content: center; /* centra los elementos horizontalmente */
-  align-items: center; /* centra los elementos verticalmente */
-  padding: 0;
+  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 0;
 }
 
 .Classnavbar .links {
@@ -49,7 +53,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #000000;
+  background-color: #f5d509;
   padding: 20px;
   box-shadow: 0 0 10px rgba(255, 254, 254, 0.2);
 }

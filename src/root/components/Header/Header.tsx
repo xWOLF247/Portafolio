@@ -10,7 +10,6 @@ function Header({ onInfoClick, onContractClick }) {
           <div className="logo">
             <img src="./icons/faLinkedin.svg" alt="" id="Logo" />
           </div>
-  
           <ul className="links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#" onClick={onInfoClick}>Información sobre mí</a></li>
