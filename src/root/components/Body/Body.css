@@ -1,0 +1,24 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .info-container, .contract-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .info-container h1, .contract-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-container p, .contract-container p {
+    font-size: 18px;
+  }

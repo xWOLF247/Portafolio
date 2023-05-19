@@ -1,16 +1,14 @@
-
 #navbar {
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  height: 200px;
-  width: 100%vw;
-  color: rgb(189, 33, 147); /* letter color */
+  height: 60px;
+  width: 100%;
+  color: rgb(1, 1, 1); /* letter color */
   padding: 0.9rem 2rem;
-  background-color: #000000;
+  background-color: #ffffffd1;
   backdrop-filter: blur(10px);
 }
  
@@ -26,8 +24,9 @@ li {
 
 .Classnavbar {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0px;
+  justify-content: center; /* centra los elementos horizontalmente */
+  align-items: center; /* centra los elementos verticalmente */
+  padding: 0;
 }
 
 .Classnavbar .links {
@@ -41,16 +40,20 @@ li {
   cursor: pointer;
 }
 
-#navbar .info-container{
+#navbar .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f8f8f8;
+  background-color: #000000;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.2);
 }
 
-#navbar .additional-info p{
-  margin: o;
+#navbar .additional-info p {
+  margin: 0;
 }
