@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header onStartClick={handleStartClick} onInfoClick={handleInfoClick} onProyectClick={handleProyectClick} onContractClick={handleContractClick}  />
+      <Header onStartClick={handleStartClick} onInfoClick={handleInfoClick} onProyectClick={handleProyectClick} onContractClick={handleContractClick} showStart={false}  />
       <Body showStart={showStart} showInfo={showInfo} showProyect={showProyect} showContract={showContract}/>
       <Footer />
     </div>
