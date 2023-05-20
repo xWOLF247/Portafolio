@@ -2,7 +2,7 @@
   overflow: hidden;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100;
   right: 0;
   z-index: 100;
   height: 60px;
@@ -29,8 +29,13 @@ li {
 .Classnavbar {
   display: flex;
   justify-content: space-between;
-  justify-content: flex-start;
-  padding-left: 0;
+  padding-right: 0%;
+}
+
+.logoMini {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .Classnavbar .links {
