@@ -15,17 +15,47 @@
   transition: height 0.5s ease-in-out;
   overflow: hidden;
 }
-  
-  .info-container, .contract-container {
+ 
+.start-container, .start-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.start-container h1, .start-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+  .info-container, .info-container {
     margin-bottom: 20px;
     text-align: center;
   }
   
-  .info-container h1, .contract-container h1 {
+  .info-container h1, .info-container h1 {
     font-size: 24px;
     margin-bottom: 10px;
   }
   
-  .info-container p, .contract-container p {
+  .info-container p, .info-container p {
     font-size: 18px;
   }
+
+  .proyect-container, .proyect-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .proyect-container h1, .proyect-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .contract-container, .contract-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contract-container p, .contract-container p {
+    font-size: 18px;
+  }
+  

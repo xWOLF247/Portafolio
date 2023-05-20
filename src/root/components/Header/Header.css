@@ -10,12 +10,12 @@
   color: rgb(54, 180, 4); /* letter color */
   padding: 0.9rem 2rem;
   opacity: 0.9;
-  background-color: #070707;
+  background-color: #000000;
   backdrop-filter: blur(10px);
   transition: height 0.5s ease-in-out;
   overflow: hidden;
 }
- 
+
 
 li {
   list-style: none;
