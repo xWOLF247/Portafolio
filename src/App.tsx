@@ -12,9 +12,11 @@ function App() {
   const [showInfo, setShowInfo] = useState(false);
   const [showContract, setShowContract] = useState(false);
   const [showProyect, setShowProyect] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true);
   
   const handleStartClick = () => {
     setShowStart(true);
+    setShowWelcome(true);
     setShowInfo(false);
     setShowContract(false);
     setShowProyect(false);
@@ -22,6 +24,7 @@ function App() {
 
   const handleInfoClick = () => {
     setShowInfo(true);
+    setShowWelcome(false);
     setShowContract(false);
     setShowStart(false);
     setShowProyect(false);
@@ -29,6 +32,7 @@ function App() {
 
   const handleProyectClick = () => {
     setShowProyect(true);
+    setShowWelcome(false);
     setShowInfo(false);
     setShowContract(false);
     setShowStart(false);
@@ -36,6 +40,7 @@ function App() {
 
   const handleContractClick = () => {
     setShowContract(true);
+    setShowWelcome(false);
     setShowInfo(false);
     setShowStart(false);
     setShowProyect(false);
@@ -46,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <Header onStartClick={handleStartClick} onInfoClick={handleInfoClick} onProyectClick={handleProyectClick} onContractClick={handleContractClick} showStart={false}  />
-      <Body showStart={showStart} showInfo={showInfo} showProyect={showProyect} showContract={showContract}/>
+      <Body showStart={showStart} showInfo={showInfo} showProyect={showProyect} showContract={showContract} showWelcome={showWelcome}/>
       <Footer />
     </div>
   )

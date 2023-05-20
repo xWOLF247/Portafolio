@@ -9,7 +9,7 @@ function Header({onStartClick, onInfoClick, onProyectClick, onContractClick}: {
     <header id="navbar">
       <div className="Classnavbar" id="Classnavbar">
         <div className="logoMini">
-          <img src="./favicon.png" alt="logoMini" id="logoMini" />
+          <img src="" alt="" id="" />
         </div>
         <ul className="links">
           <li><a href="#"onClick={onStartClick}>Inicio</a></li>
