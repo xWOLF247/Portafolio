@@ -1,7 +1,4 @@
-import React from 'react';
-import BodyStyles from './Body.css';
-
-function Body({ showStart, showInfo, showProyect , showContract }) {
+function Body({ showStart, showInfo, showProyect , showContract }: { showStart: boolean, showInfo: boolean, showProyect: boolean, showContract: boolean }) {
 
 return (
     <div className="body-container">

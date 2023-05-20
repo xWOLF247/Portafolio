@@ -13,7 +13,6 @@ function App() {
   const [showContract, setShowContract] = useState(false);
   const [showProyect, setShowProyect] = useState(false);
   
-
   const handleStartClick = () => {
     setShowStart(true);
     setShowInfo(false);

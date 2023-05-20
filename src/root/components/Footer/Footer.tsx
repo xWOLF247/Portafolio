@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 
 function Footer() {
@@ -7,10 +6,10 @@ function Footer() {
        <div className='Classfootbar' id='Classfootbar'>
            <div className='logo'><img src='' alt="" id='Logo' /></div>
            <ul className='links'>
-               <li><a href="#"></a>Linkedin</li>
-               <li><a href="#"></a>Instagram</li>
-               <li><a href="#"></a>Github</li>
-               <li><a href="#"></a>Gmail</li>
+               <li><a href="https://www.linkedin.com/in/jarol-salazar-a92589276/">Linkedin</a></li>
+               <li><a href="https://www.instagram.com/salazar_jarol/">Instagram</a></li>
+               <li><a href="https://github.com/xWOLF247">Github</a></li>
+               <li><a href="mailto:jarolsala@gmail.com">Gmail</a></li>
            </ul>
        </div>
       </footer>

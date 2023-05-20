@@ -1,9 +1,9 @@
-import Reacth, { useState } from 'react';
-import HeaderStyles from './Header.css';
-import logoMini from './favicon.png';
-
-
-function Header({onStartClick, onInfoClick, onProyectClick, onContractClick  }) {
+function Header({onStartClick, onInfoClick, onProyectClick, onContractClick}: { 
+  onStartClick: () => void, 
+  onInfoClick: () => void, 
+  onProyectClick: () => void, 
+  onContractClick: () => void, 
+  showStart: boolean }) {
 
   return (
     <header id="navbar">
