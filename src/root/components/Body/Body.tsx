@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 
 function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: { showWelcome: boolean, showStart: boolean, showInfo: boolean, showProyect: boolean, showContract: boolean }) {
+  
+  interface Proyect {
+    id: number;
+    name: string;
+    html_url: string;
+  }
 
-  const [proyects, setProyects] = useState([]);
+  const [proyects, setProyects] = useState<Proyect[]>([]);
 
   useEffect(() => {
     const fetchProyects = async () => {
