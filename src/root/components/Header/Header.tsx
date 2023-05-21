@@ -9,7 +9,7 @@ function Header({onStartClick, onInfoClick, onProyectClick, onContractClick}: {
     <header id="navbar">
       <div className="Classnavbar" id="Classnavbar">
         <div className="logoMini">
-          <img src="" alt="" id="" />
+          <img src="https://res.cloudinary.com/di5vjucp6/image/upload/v1684627907/logo_ng0xhu.png" alt="logo" id="logo" />
         </div>
         <ul className="links">
           <li><a href="#"onClick={onStartClick}>Inicio</a></li>

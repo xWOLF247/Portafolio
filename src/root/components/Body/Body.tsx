@@ -32,19 +32,21 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
 
   return (
     <div className="body-container">
+      
       {(showWelcome || showStart) && (
         <div className="welcome-container oculto">
-          <h1>Bienvenido a mi portafolio</h1>
+          <h1>Hola mi nombre es Jarol!</h1>
+          <p>Bienvenido a mi portafolio</p>
           <p>Haz clic en las opciones en la parte superior derecha de la barra para obtener más información</p>
           <p>Mis redes sociales se encuentran en la parte inferior izquierda</p>
         </div>
       )}
 
-
       {showInfo && (
         <div className="info-container">
           <h1>Información sobre mí</h1>
           <p>Jarol Joseph Salazar Cerdas</p>
+          <p>Soy un desarrollador back-end</p>
           <p>Estudiante de Ingeniería en Computación</p>
           <p>Universidad de Costa Rica</p>
           <p>Correo: jarolsalazar@gmail.com</p>
@@ -75,7 +77,9 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
 
       {showContract && (
         <div className="contract-container">
-          <p>Ponte en contacto conmigo para oportunidades laborales.</p>
+          <p>Si lo que deseas es un programador dedicado, capaz de funcionar bajo presion  y que siempre este al dia con las nuevas tecnologias</p>
+          <p> Ponte en contacto conmigo para oportunidades laborales</p>
+          <p>No te arrepentiras</p>  
           <p>Correo: jarolsalazar@gmail.com</p>
         </div>
       )}
