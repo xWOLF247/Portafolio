@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import imgStart from "../../../assets/imgStart.png";
 
 function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: { showWelcome: boolean, showStart: boolean, showInfo: boolean, showProyect: boolean, showContract: boolean }) {
   
@@ -35,10 +36,11 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
       
       {(showWelcome || showStart) && (
         <div className="welcome-container oculto">
+          <img src={imgStart} alt="Imagen de inicio"  className="imagen-reducida"/>
           <h1>Hola mi nombre es Jarol!</h1>
           <p>Bienvenido a mi portafolio</p>
           <p>Haz clic en las opciones en la parte superior derecha de la barra para obtener más información</p>
-          <p>Mis redes sociales se encuentran en la parte inferior izquierda</p>
+          <p>Mis redes sociales se encuentran en la pa  rte inferior izquierda</p>
         </div>
       )}
 
