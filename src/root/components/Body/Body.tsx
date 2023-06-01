@@ -52,7 +52,7 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
           <p>Estudiante de Ingeniería en Computación</p>
           <p>Universidad de Costa Rica</p>
           <p>Correo: jarolsalazar@gmail.com</p>
-          <a href="https://drive.google.com/file/d/19uxUtLp3MMfyAFGmIhQlPkKPRu6OuyS2/view?usp=share_link">Descarga mi CV</a>
+          <a href="https://drive.google.com/file/d/1lH3gZ0xcmPm0EWEdKIHYvI8xNP7iXnBT/view">Descarga mi CV</a>
         </div>
       )}
 
