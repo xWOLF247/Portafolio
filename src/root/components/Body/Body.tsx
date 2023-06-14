@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
+import Slider from "react-slick";
+import Carousel from "./Carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import imgStart from "../../../assets/imgStart.png";
 
-function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: { showWelcome: boolean, showStart: boolean, showInfo: boolean, showProyect: boolean, showContract: boolean }) {
-  
-  interface Proyect {
-    id: number;
-    name: string;
-    html_url: string;
-  }
+function Body({ showWelcome, showStart, showInfo, showProyect, showContract }:
+  { showWelcome: boolean, showStart: boolean, showInfo: boolean, showProyect: boolean, showContract: boolean }) {
 
-  const [proyects, setProyects] = useState<Proyect[]>([]);
+
+
+  const [proyects, setProyects] = useState([]);
 
   useEffect(() => {
     const fetchProyects = async () => {
@@ -33,10 +34,10 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
 
   return (
     <div className="body-container">
-      
+
       {(showWelcome || showStart) && (
         <div className="welcome-container oculto">
-          <img src={imgStart} alt="Imagen de inicio"  className="imagen-reducida"/>
+          <img src={imgStart} alt="Imagen de inicio" className="imagen-reducida" />
           <h1>Hola mi nombre es Jarol!</h1>
           <p>Bienvenido a mi portafolio</p>
           <p>Haz clic en las opciones en la parte superior derecha de la barra para obtener más información</p>
@@ -60,17 +61,7 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
         <div className="proyect-container">
           <h1>Proyectos</h1>
           {proyects.length > 0 ? (
-            <div className="carousel">
-              {proyects.map((proyect) => (
-                <div className="proyect" key={proyect.id}>
-                  <h2>
-                    <a href={proyect.html_url} target="_blank" rel="noreferrer">
-                      {proyect.name}
-                    </a>
-                  </h2>
-                </div>
-              ))}
-            </div>
+            <Carousel proyects={proyects} />
           ) : (
             <p>No se encontraron proyectos públicos.</p>
           )}
@@ -81,7 +72,7 @@ function Body({ showWelcome, showStart, showInfo, showProyect, showContract }: {
         <div className="contract-container">
           <p>Si lo que deseas es un programador dedicado, capaz de funcionar bajo presion  y que siempre este al dia con las nuevas tecnologias</p>
           <p> Ponte en contacto conmigo para oportunidades laborales</p>
-          <p>No te arrepentiras</p>  
+          <p>No te arrepentiras</p>
           <p>Correo: jarolsalazar@gmail.com</p>
         </div>
       )}
